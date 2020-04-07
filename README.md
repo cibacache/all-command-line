@@ -45,14 +45,12 @@ git stash drop                          //elimina un estado de la lista, saca el
 ### Repositorios Remotos
 ```
 git clone <URL>
-git remote add origin <URL>	//sube un repositorio
+git remote add <nombre servidor> <URL>	//Se asigna un nombre al repositorio remoto
 git remote -v 		//muestra las conexiones remotas
 git remote set-url origin <URL> //Cambiar de repositorio remoto
-git push origin <rama> //Sube commit a repositorio
+git push <servidor> <rama> //Sube commit a repositorio
 git push -u origin --all //Sube toda las ramas al repositorio remoto
 
-git pull //actualiza a la rama master del repositorio remoto
-git pull https://kamilo3040@bitbucket.org/kamilo3040/api-cellfie.git //actualiza el repo
 git pull <servidor> <rama> // actualiza el repo
 git remote show [nombre] //info del repositorio remoto
 ```
@@ -61,4 +59,10 @@ git remote show [nombre] //info del repositorio remoto
 ```
 git tag -a v1.0 -m “un mensaje” <id commit>
 git push origin --tags //sube todos los tags
+```
+### Arbol de nodos 
+```
+ git log --oneline --graph --decorate
+// Se puede crear un alias para mas comodidas
+// alias arbolito='git log --oneline --graph --decorate'
 ```
