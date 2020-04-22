@@ -59,6 +59,8 @@ git remote show [nombre] //info del repositorio remoto
 ```
 git tag -a v1.0 -m “un mensaje” <id commit>
 git push origin --tags //sube todos los tags
+git tag -n // muestra un lista de los tags con mensaje
+git tag -d <nombre del tag> // borra un tag localmente ejemplo:  git tag -d v0.1.0
 ```
 ### Arbol de nodos 
 ```
